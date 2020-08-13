@@ -18,7 +18,11 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//rabbitTemplate.convertAndSend("Hello from our first message!"); //Envia para o default exchange
-		rabbitTemplate.convertAndSend("TestExchange", "testRouting", "Hello from code!");
+
+		SimpleMessage simpleMessage = new SimpleMessage();
+		simpleMessage.setName("MyMessage");
+		simpleMessage.setDescription("simpleDescription");
+
+		rabbitTemplate.convertAndSend("TestExchange", "testRouting", simpleMessage);
 	}
 }

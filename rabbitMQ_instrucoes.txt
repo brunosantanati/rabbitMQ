@@ -18,6 +18,7 @@ C:\Users\55119\Documents\apps\rabbitmq-server-windows-3.7.3\rabbitmq_server-3.7.
 C:\Users\55119\Documents\apps\rabbitmq-server-windows-3.7.3\rabbitmq_server-3.7.3\sbin>rabbitmq-service install
 C:\Users\55119\Documents\apps\rabbitmq-server-windows-3.7.3\rabbitmq_server-3.7.3\sbin>rabbitmq-plugins.bat enable rabbitmq_management
 C:\Users\55119\Documents\apps\rabbitmq-server-windows-3.7.3\rabbitmq_server-3.7.3\sbin>rabbitmq-server.bat
+Depois de reiniciar o notebook foi criado um serviço no Windows que sobe automaticamente, não sendo mais necessário subir manualmente o rabbitmq-server.bat.
 
 URL localhost:
 http://localhost:15672/

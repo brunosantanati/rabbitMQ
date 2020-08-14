@@ -23,6 +23,6 @@ public class DemoApplication implements CommandLineRunner {
 		simpleMessage.setName("MyMessage");
 		simpleMessage.setDescription("simpleDescription");
 
-		rabbitTemplate.convertAndSend("TestExchange", "testRouting", simpleMessage);
+		rabbitTemplate.convertAndSend("MyTopicExchange", "topic", simpleMessage);
 	}
 }
